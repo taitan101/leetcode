@@ -1,0 +1,48 @@
+package findpeak;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class SolutionTest {
+
+	Solution so;
+	
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		
+		so = new Solution();
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testFindPeakElement() {
+		
+		int [] nums = {1,2,3,1};
+		
+		System.out.println(so.findPeakElement(nums));
+		
+		
+		int [] nums2 = {0,1,2,3,4,5,6};
+		
+		System.out.println(so.findPeakElement(nums2));		
+		
+		//fail("Not yet implemented");
+	}
+
+}
